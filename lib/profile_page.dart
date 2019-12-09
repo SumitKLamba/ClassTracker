@@ -72,8 +72,114 @@ class Profile_Page extends StatelessWidget {
                     fontSize: 40,
                 color: Color(0xFFC2C7D1)),
               ),
-              SizedBox(height: 30,),
-
+              SizedBox(height: 80),
+              Padding(
+                padding: EdgeInsets.only(left: 60, right: 60),
+                child: Container(
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Image.asset('icons/icons8-student-center-96 1.png',width: 30,),
+                          SizedBox(width: 10,),
+                          Container(
+                            height: 30,
+                            width:70,
+                            child: Align(
+                              alignment: Alignment.center,
+                              child: Text(
+                                'IPU',
+                                style: TextStyle(fontFamily: 'Raleway',
+                                color: Color(0xFFD9D9D9),
+                                fontSize: 15,
+                                ),
+                              ),
+                            ),
+                            decoration: BoxDecoration(
+                              color: Color(0x1FC4C4C4),
+                              borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                            ),
+                          ),
+                          SizedBox(width: 10,),
+                          Text('GTBIT',
+                          style: TextStyle(fontFamily: 'Raleway',
+                            color: Color(0xFFD9D9D9),
+                          fontSize: 15,
+                          ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 10,),
+                      Row(
+                        children: <Widget>[
+                          Image.asset('icons/icons8-school-96 1.png',width: 30,),
+                          SizedBox(width: 10,),
+                          Container(
+                            height: 30,
+                            width:70,
+                            child: Align(
+                              alignment: Alignment.center,
+                              child: Text(
+                                '2nd',
+                                style: TextStyle(fontFamily: 'Raleway',
+                                  color: Color(0xFFD9D9D9),
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ),
+                            decoration: BoxDecoration(
+                              color: Color(0x1FC4C4C4),
+                              borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                            ),
+                          ),
+                          SizedBox(width: 10,),
+                          Text('1st Sem',
+                            style: TextStyle(fontFamily: 'Raleway',
+                              color: Color(0xFFD9D9D9),
+                              fontSize: 15,
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 10,),
+                      Row(
+                        children: <Widget>[
+                          Image.asset('icons/icons8-email-96 1.png',width: 30,),
+                          SizedBox(width: 10,),
+                          Text('Sample@email.com',
+                            style: TextStyle(fontFamily: 'Raleway',
+                              color: Color(0xFFD9D9D9),
+                              fontSize: 15,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(height: 50,),
+              Align(
+                alignment: Alignment.center,
+                child: Container(
+                  width: MediaQuery.of(context).size.width-160,
+                  height: 50,
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      'Edit Profile',
+                      style: TextStyle(fontFamily: 'Raleway',
+                      color: Color(0xFFFAFAFA),
+                      fontSize: 18,
+                      ),
+                    ),
+                  ),
+                  decoration: BoxDecoration(
+                   borderRadius: BorderRadius.all(Radius.circular(30)),
+                    color: Color(0xFFFF5E57),
+                  ),
+                ),
+              ),
             ],
           ),
         ],
